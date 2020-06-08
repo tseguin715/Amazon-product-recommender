@@ -34,7 +34,7 @@ Average actual rating for products predicted to be in the top 5% of ratings or s
 
 The Video Games, Musical Instruments, Software, Arts Crafts and Sewing, Industrial and Scientific, and Grocery and Gourmet Food departments were used in model evaluation. Data was split in half by time per department and models trained and tested on the earlier and later halves, respectively. The scores for the test portions for each model and metric is shown in the following figures (note that RMSD could not be tested for cosine similarity because that calculates a value between -1 and 1 and not an explicit rating):
 
-! [] (https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/overall_rmsd.png)
+![] (https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/overall_rmsd.png)
 ! [] https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/top5_rmsd.png?raw=true
 ! [] https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/top5l_actual.png?raw=true
 
