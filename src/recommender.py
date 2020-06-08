@@ -23,7 +23,7 @@ item_ratings = {items_tmp[i][0]: items_tmp[i][1]
 
 
 # Create dictionary 'coll' of departments per product
-asins = pd.read_csv('asins.csv', index_col='asin')
+asins = pd.read_csv('asins.csv', index_col='asin',compression='gzip')
 asins = asins.loc[~asins.index.duplicated(keep='first')]
 colls = {}
 for i in item_ratings.keys():
