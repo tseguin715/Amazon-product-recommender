@@ -44,7 +44,7 @@ The Video Games, Musical Instruments, Software, Arts Crafts and Sewing, Industri
 ![](https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/top5_rmsd.png?raw=true)
 ![](https://github.com/tseguin715/Amazon-product-recommender/blob/master/img/top5_actual.png?raw=true)
 
-SVD has the lowest RMSD results of any method, while for the actual ratings of top 5% predicted products, the XGBoost method performs best except in Musical Instruments and Software (tied in Grocery and Gourmet Food). XGBoost, despite its lower RMSD, may be predicting more products that the user ended up rated highly, except in the above mentioned departments. The better or worse ability of XGBoost to predicted enjoyable products may depend on the usefulness of the text data utilized, which SVD does not rely upon.
+SVD has the lowest RMSD results of any method, while for the actual ratings of top 5% predicted products, the XGBoost method performs best except in Musical Instruments and Software (tied in Grocery and Gourmet Food). XGBoost, despite its higher RMSD, may be predicting more products that the user ended up rated highly, except in the above mentioned departments. The better or worse ability of XGBoost to predicted enjoyable products may depend on the usefulness of the text data utilized, which SVD does not rely upon.
 
 The current version of the recommender uses the SVD model, partly because the wall time for execution is less than the XGBoost method with only a small compromise in scores of the top 5% of predicted products.
 
