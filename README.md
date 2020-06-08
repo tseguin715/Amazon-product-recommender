@@ -10,9 +10,7 @@ The basic process goes as:
 1. Take in user input of ratings 
 2. Detect which departments the products belong to
 3. Fit a separate model with all users and rating data for each department, which include the user's
-4. Return recommendations for each department ('You may also like in these departments...')
-5. Find other products based on cosine similarity to the highest-rated items
-6. Return the additional recommendations ('Additional recommendations include...')
+4. Return recommendations for each department 
 
 Data source: https://nijianmo.github.io/amazon/index.html
 
@@ -26,8 +24,8 @@ Model evaluation
 
 Models: 
 SVD and NMF (from the Surprise scikit) with user ratings
-XGBoost with user ratings and TF-IDF-transformed 'bags of words' with description, features, brand, and category text
-Cosine similarity on the TF-IDF transformations 
+XGBoost with user ratings and TFIDF-transformed 'bags of words' with description, features, brand, and category text
+Cosine similarity on the TFIDF transformations 
 
 Metrics:
 Overall RMSD and RMSD for products predicted to be in top 5% of ratings per user (SVD, NMF, XGBoost)
