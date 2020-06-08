@@ -1,6 +1,6 @@
 # Amazon product recommender
 
-Introducion
+Introduction
 
 An effective recommender system is a critical part of successful e-commerce. Amazon.com attributes 35% of its revenue to its complex recommendation system. [source: https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers] Modern data science techniques enable recommendations from data including but not limited to shopping history, ratings (explicit and implicit), and website activity (types of web pages visited and duration on those web pages, exit rates, etc.) using techniques such as Singular Value Decomposition (SVD) on user-rating data and cosine similarity on vectorized item descriptions. 
 
@@ -12,6 +12,11 @@ The basic process goes as:
 3. Fit a separate model with all users and rating data for each department, which include the user's
 4. Return recommendations for each department 
 
+The recommender is given in src/recommender.py
+usage: python recommender.py user_input.csv
+
+"user_input.csv" is a csv file (without headers) with product asins on the left column and ratings in the right column (a example is provided in this directory as sample_submissions.csv)
+
 Data source: https://nijianmo.github.io/amazon/index.html
 
 A script for helping to collect the data and recreate the mongo database used in the project is provided in src/data_collection.py
@@ -20,9 +25,10 @@ A sample of the data is provided: the 5-core reviews and product meta data for t
 
 Additional necessary files (asins.csv) are provided in this directory.
 
-Model evaluation
+Model evaluation 
+A script for model evaluation is given in src/modelling.py
 
-Models (all at default settings)
+Models (all at default settings):
 SVD and NMF (from the Surprise scikit) with user ratings;
 XGBoost with user ratings and TFIDF-transformed 'bags of words' with description, features, brand, and category text;
 Cosine similarity on the TFIDF transformations
