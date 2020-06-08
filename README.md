@@ -1,6 +1,6 @@
 # Amazon product recommender
 
-Introduction
+## Introduction
 
 An effective recommender system is a critical part of successful e-commerce. Amazon.com attributes 35% of its revenue to its complex recommendation system. [source: https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers] Modern data science techniques enable recommendations from data including but not limited to shopping history, ratings (explicit and implicit), and website activity (types of web pages visited and duration on those web pages, exit rates, etc.) using techniques such as Singular Value Decomposition (SVD) on user-rating data and cosine similarity on vectorized item descriptions. 
 
@@ -11,6 +11,8 @@ The basic process goes as:
 2. Detect which departments the products belong to
 3. Fit a separate model with all users and rating data for each department, which include the user's
 4. Return recommendations for each department 
+
+## Usage
 
 The recommender is given in src/recommender.py
 usage: python recommender.py user_input.csv
@@ -23,16 +25,16 @@ A script for helping to collect the data and recreate the mongo database used in
 
 Samples of ratings and meta data for Software are provided in the data directory. 
 
-Additional necessary files (asins.csv) is provided here: https://drive.google.com/file/d/1KoXFwZ84JS13kRM1MaQIYG3oNo2eqjVp/view?usp=sharing
+Additional necessary files (asins.csv) provided here: https://drive.google.com/file/d/1KoXFwZ84JS13kRM1MaQIYG3oNo2eqjVp/view?usp=sharing
 
-Model evaluation 
+## Model evaluation 
+
 A script for model evaluation is given in src/modelling.py
 
 Models (all at default settings):
 SVD and NMF (from the Surprise scikit) with user ratings;
 XGBoost with user ratings and TFIDF-transformed 'bags of words' with description, features, brand, and category text;
 Cosine similarity on the TFIDF transformations
-
 
 Metrics:
 Overall RMSD and RMSD for products predicted to be in top 5% of ratings per user (SVD, NMF, XGBoost);
@@ -48,5 +50,7 @@ SVD has the lowest RMSD results of any method, while for the actual ratings of t
 
 The current version of the recommender uses the SVD model, partly because the wall time for execution is less than the XGBoost method with only a small compromise in scores of the top 5% of predicted products.
 
+## Future directions
 
+More departments could be used in model evaluation (preferably, all of them), and the tendancy for XGBoost to predict more products that the user would enjoy despite higher overall RMSD should be investigated.
 
