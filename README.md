@@ -15,6 +15,7 @@ The basic process goes as:
 ## Usage
 
 The recommender is given in src/recommender.py
+
 usage: python recommender.py user_input.csv
 
 "user_input.csv" is a csv file (without headers) with product asins on the left column and ratings in the right column (a example is provided in this directory as sample_submissions.csv)
