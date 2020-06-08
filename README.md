@@ -21,9 +21,9 @@ Data source: https://nijianmo.github.io/amazon/index.html
 
 A script for helping to collect the data and recreate the mongo database used in the project is provided in src/data_collection.py
 
-A sample of the data is provided: the 5-core reviews and product meta data for the Software department in data/ (Software_5.json.gz and meta_Software.json.gz, respectively). 
+Samples of ratings and meta data for Software are provided in the data directory. 
 
-Additional necessary files (asins.csv) are provided in this directory.
+Additional necessary files (asins.csv) is provided here: https://drive.google.com/file/d/1KoXFwZ84JS13kRM1MaQIYG3oNo2eqjVp/view?usp=sharing
 
 Model evaluation 
 A script for model evaluation is given in src/modelling.py
