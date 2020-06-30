@@ -4,7 +4,7 @@
 
 An effective recommender system is a critical part of successful e-commerce. Amazon.com attributes 35% of its revenue to its complex recommendation system. [source: https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers] Modern data science techniques enable recommendations from data including but not limited to shopping history, ratings (explicit and implicit), and website activity (types of web pages visited and duration on those web pages, exit rates, etc.) using techniques such as Singular Value Decomposition (SVD) on user-rating data and cosine similarity on vectorized item descriptions. 
 
-To get acquainted with the data, as of 2018, Amazon had ~15.2 million products across 29 departments, with ~230.1 million reviews in total. The largest departments in terms of reviews and products were 'Books' and 'Clothing Shoes and Jewelry' (see the following two figures).
+To get acquainted with the <a href="https://nijianmo.github.io/amazon/index.html">data used for this project</a>, as of 2018, Amazon had ~15.2 million products across 29 departments, with ~230.1 million reviews in total. The largest departments in terms of reviews and products were 'Books' and 'Clothing Shoes and Jewelry' (see the following two figures).
 
 
 <table align="center">
@@ -14,13 +14,13 @@ To get acquainted with the data, as of 2018, Amazon had ~15.2 million products a
 </table>
 
 
-Interestingly, due to the steep rise in review count in about 2014, the majority of Amazon's reviews may be from this time onwards despite the website opening in 1997. The following figure shows the total review count for several selected departments.
+Interestingly, due to the steep rise in review count in about 2014, the majority of Amazon's reviews may be from this time onwards despite the website beginning to sell products in about 1998. The following figure shows the total review count for several selected departments.
 
 
 <img src="img/rev_time.svg" width="400"/>
 
 
-Amazon's product ratings distribution mostly occupies the extremes (1 or 5 on a 1-5 scale), which is a <a href="http://www.columbia.edu/~on2110/Papers/Schoenmueller_netzer_stahl_2018.pdf">known phenomenon in the distribution of online reviews</a>. The reasons could be due to a tendency only for those with extreme experiences to be likely to provide a review. This type of distribution is apparent for Amazon: the following violin plot shows the ratings distribution for all products, as well as some of the individual departments that comprise the total distribution.
+Amazon's product ratings distribution mostly occupies the extremes (1 or 5 on a 1-5 scale), which is a <a href="http://www.columbia.edu/~on2110/Papers/Schoenmueller_netzer_stahl_2018.pdf">known phenomenon in the distribution of online reviews</a>. This follows from a likely tendency only for those with extreme experiences to provide a review. The following violin plot shows the ratings distribution for all products, as well as some of the individual departments that comprise the total distribution.
 
 <img src="img/violin.svg" width="700"/>
 
