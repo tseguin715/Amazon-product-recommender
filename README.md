@@ -4,7 +4,7 @@
 
 An effective recommender system is a critical part of successful e-commerce. Amazon.com attributes 35% of its revenue to its complex recommendation system. [source: https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers] Modern data science techniques enable recommendations from data including but not limited to shopping history, ratings (explicit and implicit), and website activity (types of web pages visited and duration on those web pages, exit rates, etc.) using techniques such as Singular Value Decomposition (SVD) on user-rating data and cosine similarity on vectorized item descriptions. 
 
-To get acquainted with the <a href="https://nijianmo.github.io/amazon/index.html">data used for this project</a>, as of 2018, Amazon had ~15.2 million products across 29 departments, with ~230.1 million reviews in total. The largest departments in terms of reviews and products were 'Books' and 'Clothing Shoes and Jewelry' (see the following two figures).
+This project uses Amazon product data to build recomender systems. To get acquainted with the <a href="https://nijianmo.github.io/amazon/index.html">data</a>, as of 2018, Amazon had ~15.2 million products across 29 departments, with ~230.1 million reviews in total. The largest departments in terms of reviews and products were 'Books' and 'Clothing Shoes and Jewelry' (see the following two figures).
 
 
 <table align="center">
