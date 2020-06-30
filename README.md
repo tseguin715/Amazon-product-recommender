@@ -75,7 +75,7 @@ The current version of this recommender uses the SVD model, partly because the w
 
 ## Recommendations from content-based filtering techniques
 
-Recommendations from a user profile of inputted ratings seems to perform well, but the drawbacks of the commandline approach above is the computation time to get the recommendations. What if the user just wanted to know which products are similar to a specific product? This inspired the creation of a web app with a database of pre-computed product similarities using the TFIDF+cosine similarity method. The web app based on this idea is hosted <a href="https://tjs-apr.herokuapp.com">here</a>.
+Recommendations from a user profile of inputted ratings seems to perform well, but the drawbacks of the commandline approach above is the computation time to get the recommendations. What if the user just wanted to know which products are similar to a specific product? This inspired the creation of a web app with a database of pre-computed product similarities using the TFIDF+cosine similarity method. A web app was created based on this idea and is hosted <a href="https://tjs-apr.herokuapp.com">here</a>.
 
 # Future directions
 
