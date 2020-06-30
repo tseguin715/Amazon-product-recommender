@@ -26,7 +26,7 @@ Amazon's product ratings distribution mostly occupies the extremes (1 or 5 on a 
 
 ## Recommendations from collaborative filtering techniques
 
-The first approach in this project was to use publicly available data comprised of product reviews and meta data from Amazon collected in 2018 to create a collaborative-filtering based recommender system via a commandline program. This approach used the '5-core' review datasets (where every reviewer and every product has at least 5 reviews) and meta data for all products in all departments. Given a user input of product ratings, the goal was to provide recommendations for each department a user rated products in.
+The first approach in this project for building recommenders was to create a collaborative-filtering based recommender as a standalone .py script. This approach would draw data as needed from the '5-core' review datasets (where every reviewer and every product has at least 5 reviews) and meta data for all products in any department to generate recommendations. Given a user input of product ratings, the goal was to provide recommendations for each department a user rated products in.
 
 The basic process goes as:
 1. Take in user input of ratings 
