@@ -1,4 +1,4 @@
-# Amazon product recommender
+# Not Amazon’s Product Recommender
 
 ### Introduction
 
